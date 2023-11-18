@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <li class="header-item"></li><a href="index.html">Google Search</a>
+        </div>
+        <div class="header-advanced">
+            <label style="margin-left:10px"> Advanced Search</label>
+        </div>
+        <div class="header-advanced2">
+            <span>Find pages with...</span>
+        </div>
+        <div class="center-body-advanced">
+            <form action="https://www.google.com/search?tbm=isch">
+                <div class="table-rows">
+                    <label for="all" class="label-text">all these words:</label>
+                    <input type="text" id="all" name="as_q" class="rectangular-tips">
+                </div>
+                <div class="table-rows">
+                    <label for="exact" class="label-text">this exact word or phrase:</label>
+                    <input type="text" id="exact" name="as_epq" class="rectangular-tips">
+                </div>
+                <div class="table-rows">
+                    <label for="any" class="label-text">any of these words:</label>
+                    <input type="text" id="any" name="as_oq" class="rectangular-tips">
+                </div>
+                <div class="table-rows">
+                    <label for="none" class="label-text">none of these words:</label>
+                    <input type="text" id="none" name="as_eq" class="rectangular-tips">
+                </div>
+                <div class="div-google-advanced-button"> 
+                    <input type="submit" value="Advanced Search" class="google-advanced-button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
