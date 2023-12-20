@@ -1,0 +1,35 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1> Create New Page </h1>
+    <form method="post"> 
+        {% csrf_token %}
+        <!----
+        
+            <div>
+                <label for="title">Title:</label>
+                {{ form_title }}
+                <br><br>
+            </div>
+            <div>
+                <label for="content">Content:</label>
+                {{ form_content }}
+            </div>
+        
+        -->
+        {{ create_form }}
+        {% for message in messages %}
+    
+            <div class="alert alert-warning alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ message }}
+            </div>
+
+        {% endfor %}
+        <button type="submit" class="btn btn-success my-3">Save Page</button>
+    </form>
+{% endblock %}
